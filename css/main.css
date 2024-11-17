@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #141c4b;
+}
+.topnav {
+    position: fixed; /* Keeps the navigation bar fixed to the top of the screen */
+    top: 0;          /* Position it at the very top */
+    width: 100%;     /* Ensures it spans the full width of the screen */
+    z-index: 100;   /* Ensures it stays above other elements */
+    overflow: hidden;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #aa0404;
+    padding: 18px 25px;
+    color: white;
+}
+
+.Welcome {
+    position: absolute; /* Relative to its parent container */
+    z-index: 2; /* Ensure it is above the image */
+    background-color: rgba(13, 10, 26, 0); /* Slight transparency for better contrast */
+    padding: 15px; /* Add padding for space inside */
+    border-style: dashed;
+    font-size: clamp(5px, 15px, 20px); /* Adjust text size responsively */
+    color: rgb(0, 0, 0);
+    text-align: left; /* Center-align text */
+    width: clamp(30%,30%,30%); /* Adjust container width */
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(40%);
+}
+.Welcome h1 {
+    color: #aa0404;
+    padding-bottom: 15px;
+}
+.Welcome h2 {
+    color: #000000;
+}
+
+.Welcome .portfolio_button button {
+    padding: 10px 20px;
+    background-color: #aa0404;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Welcome .portfolio_button button:hover {
+    background-color: #770303;
+    transform: scale(1.05);
+}
+.myImg {
+    position: absolute;
+    z-index: 1;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+
