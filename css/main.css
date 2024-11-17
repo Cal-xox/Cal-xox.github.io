@@ -41,7 +41,7 @@ body {
 .Welcome {
     position: absolute; /* Relative to its parent container */
     z-index: 2; /* Ensure it is above the image */
-    background-color: rgba(13, 10, 26, 0); /* Slight transparency for better contrast */
+    background-color: rgba(13, 10, 26, 0.288); /* Slight transparency for better contrast */
     padding: 15px; /* Add padding for space inside */
     border-style: dashed;
     font-size: clamp(5px, 15px, 20px); /* Adjust text size responsively */
