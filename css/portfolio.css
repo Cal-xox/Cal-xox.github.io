@@ -79,12 +79,18 @@ body {
     color: white;
 }
 
+.Portfolio h3 a {
+    color:#aa04045d;
+    text-shadow: 2px 2px 2px #333;
+}
+
 .Portfolio h4{
     padding: 10px 10px;
     width: 50%;
     height: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
     border-color: black;
     border-style: solid;
 }
