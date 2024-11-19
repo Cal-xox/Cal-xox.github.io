@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body {
     background: #000000;
@@ -51,6 +52,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     transform: translateX(40%);
+    box-shadow: 2px 2px 2px black;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
 }
 .Welcome h1 {
     color: #aa0404;
@@ -59,8 +65,10 @@ body {
 }
 .Welcome h2 {
     color: #cccccc;
-    padding-bottom: 2%;
     text-shadow: 2px 2px 2px #333;
+}
+.Welcome .padding{
+    padding-bottom: 2%;
 }
 
 .Welcome .portfolio_button button {
@@ -72,6 +80,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    text-shadow: 2px 2px 2px #333;
 }
 
 .Welcome .portfolio_button button:hover {
@@ -86,5 +95,25 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 50%;
+    animation-name: fadeInOpacityImg;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
 }
 
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeInOpacityImg {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
