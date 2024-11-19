@@ -55,10 +55,12 @@ body {
 .Welcome h1 {
     color: #aa0404;
     padding-bottom: 15px;
+    text-shadow: 2px 2px 2px #333;
 }
 .Welcome h2 {
     color: #cccccc;
     padding-bottom: 2%;
+    text-shadow: 2px 2px 2px #333;
 }
 
 .Welcome .portfolio_button button {
